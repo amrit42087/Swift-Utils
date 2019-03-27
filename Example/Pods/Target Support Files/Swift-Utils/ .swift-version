@@ -1,0 +1,2 @@
+
+echo "4.2" >> .swift-version

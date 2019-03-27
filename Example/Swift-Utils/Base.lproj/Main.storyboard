@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Swift_Utils_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVq-d3-QsX" customClass="ASButton" customModule="Pods_Swift_Utils_Example">
+                                <rect key="frame" x="50" y="537" width="275" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.16078431369999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0BZ-OL-Dzr"/>
+                                </constraints>
+                                <state key="normal" title="Show Toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showToastButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v7Z-qo-PUX"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Kt-pZ-7oT">
+                                <rect key="frame" x="10" y="32" width="355" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uuX-Ge-wD9">
+                                        <rect key="frame" x="0.0" y="0.0" width="354.5" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animate from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-0T-h84">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n1t-k5-VgC">
+                                                <rect key="frame" x="115.5" y="0.0" width="239" height="29"/>
+                                                <segments>
+                                                    <segment title="Top"/>
+                                                    <segment title="Left"/>
+                                                    <segment title="Right"/>
+                                                    <segment title="Bottom"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="animateFromSelector:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hdu-Yb-OUe"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sN1-Pk-xXV">
+                                        <rect key="frame" x="0.0" y="48" width="355" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S8-Gn-dpQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="66L-LW-WUg">
+                                                <rect key="frame" x="93" y="0.0" width="262" height="29"/>
+                                                <segments>
+                                                    <segment title="Top"/>
+                                                    <segment title="Center"/>
+                                                    <segment title="Bottom"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="positionSelector:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Yze-5p-eYy"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sN1-Pk-xXV" secondAttribute="trailing" id="Nsk-aA-Xa8"/>
+                                    <constraint firstAttribute="bottom" secondItem="sN1-Pk-xXV" secondAttribute="bottom" id="Vvb-kP-dgz"/>
+                                    <constraint firstItem="sN1-Pk-xXV" firstAttribute="leading" secondItem="5Kt-pZ-7oT" secondAttribute="leading" id="Zlb-5d-Kdc"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-rg-hOu" customClass="ASButton" customModule="Pods_Swift_Utils_Example">
+                                <rect key="frame" x="50" y="133" width="275" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.16078431369999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bSL-i2-V25"/>
+                                </constraints>
+                                <state key="normal" title="Add Pop Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPopUpAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QoE-V4-6uu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bsy-rg-hOu" firstAttribute="top" secondItem="5Kt-pZ-7oT" secondAttribute="bottom" constant="25" id="9XZ-Z4-WkD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AVq-d3-QsX" secondAttribute="bottom" constant="90" id="IPK-xC-oHQ"/>
+                            <constraint firstItem="5Kt-pZ-7oT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="LKD-MK-Trr"/>
+                            <constraint firstAttribute="trailing" secondItem="AVq-d3-QsX" secondAttribute="trailing" constant="50" id="aKA-cU-xwA"/>
+                            <constraint firstItem="Bsy-rg-hOu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="abn-N7-4cO"/>
+                            <constraint firstAttribute="trailing" secondItem="5Kt-pZ-7oT" secondAttribute="trailing" constant="10" id="kev-7p-Cyq"/>
+                            <constraint firstItem="AVq-d3-QsX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="lZU-oc-emW"/>
+                            <constraint firstItem="5Kt-pZ-7oT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="o4Z-Ln-v1S"/>
+                            <constraint firstAttribute="trailing" secondItem="Bsy-rg-hOu" secondAttribute="trailing" constant="50" id="qxN-tq-pIm"/>
+                            <constraint firstItem="Bsy-rg-hOu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vEX-AJ-Qnd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

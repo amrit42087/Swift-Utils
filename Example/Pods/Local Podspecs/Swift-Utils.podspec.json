@@ -1,0 +1,22 @@
+{
+  "name": "Swift-Utils",
+  "version": "0.1.0",
+  "summary": "A short description of Swift-Utils.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amrit42087/Swift-Utils",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "amrit42087": "singhamritpal@seasiainfotech.com"
+  },
+  "source": {
+    "git": "https://github.com/amrit42087/Swift-Utils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Swift-Utils/Classes/**/*"
+}
