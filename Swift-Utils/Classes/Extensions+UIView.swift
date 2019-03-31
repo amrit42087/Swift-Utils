@@ -426,4 +426,13 @@ extension UIView {
         }
         
     }
+
+    // This function adds a blur view at zero index.
+    public func addBlurView(style: UIBlurEffect.Style) {
+        let blurEffect = UIBlurEffect(style: style)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.insertSubview(blurEffectView, at: 0)
+    }
 }

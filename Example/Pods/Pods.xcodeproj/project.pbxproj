@@ -15,8 +15,11 @@
 		B625A4A4224621F10018D229 /*  .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = B625A4A3224621F10018D229 /*  .swift-version */; };
 		B62C83DE224A820300653FAE /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C83DD224A820300653FAE /* ASButton.swift */; };
 		B63248AD4E3E4E57601B7FCD61C8C0B4 /* Swift-Utils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB70BB72D6F75E8364FBFFC0FD685D67 /* Swift-Utils-dummy.m */; };
+		B6701E17224FB88700DD911A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6701E15224FAEF900DD911A /* Assets.xcassets */; };
+		B6701E1B22509BF900DD911A /* Extensions+UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */; };
 		B6CEC948224A853A00FB8E5B /* ASLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEC946224A853A00FB8E5B /* ASLoader.swift */; };
 		B6CEC949224A853A00FB8E5B /* ASToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEC947224A853A00FB8E5B /* ASToast.swift */; };
+		B6CEC94C224F534F00FB8E5B /* Extensions+UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEC94B224F534F00FB8E5B /* Extensions+UITextfield.swift */; };
 		CB820C39E742DB66D5EFE4F16F8DDB44 /* Pods-Swift-Utils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 566075B44D8A7AF7BB350B4791219D44 /* Pods-Swift-Utils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E06874616FEB52743EAF52BB6C463ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		E27833BD223250D200E4790B /* ASCustomizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27833AC223250B500E4790B /* ASCustomizableView.swift */; };
@@ -29,7 +32,6 @@
 		E27833C4223250D200E4790B /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27833B1223250B600E4790B /* Extensions+UIView.swift */; };
 		E27833C5223250D200E4790B /* Extensions+UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27833A9223250B400E4790B /* Extensions+UIResponder.swift */; };
 		E27833C6223250D200E4790B /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27833AB223250B500E4790B /* Extensions+UIViewController.swift */; };
-		E27833D022327D6E00E4790B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27833CE22327D5E00E4790B /* Assets.xcassets */; };
 		E39CD29D571F13BCFA9B90B3425A128A /* Swift-Utils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F0332E4094FB3B9BD9CB469C2ADCF5 /* Swift-Utils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -75,8 +77,11 @@
 		B4C367974D76D3C0B85BF1787C3DFF26 /* Pods-Swift-Utils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Utils_Example-dummy.m"; sourceTree = "<group>"; };
 		B625A4A3224621F10018D229 /*  .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = " .swift-version"; sourceTree = "<group>"; };
 		B62C83DD224A820300653FAE /* ASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASButton.swift; path = "Swift-Utils/Classes/ASButton.swift"; sourceTree = "<group>"; };
+		B6701E15224FAEF900DD911A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Swift-Utils/Classes/Assets.xcassets"; sourceTree = "<group>"; };
+		B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UITextfield.swift"; path = "Swift-Utils/Classes/Extensions+UITextfield.swift"; sourceTree = "<group>"; };
 		B6CEC946224A853A00FB8E5B /* ASLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASLoader.swift; path = "Swift-Utils/Classes/ASLoader.swift"; sourceTree = "<group>"; };
 		B6CEC947224A853A00FB8E5B /* ASToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASToast.swift; path = "Swift-Utils/Classes/ASToast.swift"; sourceTree = "<group>"; };
+		B6CEC94B224F534F00FB8E5B /* Extensions+UITextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UITextfield.swift"; sourceTree = "<group>"; };
 		BB9EE36396FFD683AA3101C4343333B6 /* Pods-Swift-Utils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Utils_Example-Info.plist"; sourceTree = "<group>"; };
 		C60419F58953EFA4CBD41F4FB560FCEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -93,7 +98,6 @@
 		E27833B0223250B600E4790B /* Extensions+UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UITableViewCell.swift"; path = "Swift-Utils/Classes/Extensions+UITableViewCell.swift"; sourceTree = "<group>"; };
 		E27833B1223250B600E4790B /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UIView.swift"; path = "Swift-Utils/Classes/Extensions+UIView.swift"; sourceTree = "<group>"; };
 		E27833B2223250B600E4790B /* Extensions+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UIColor.swift"; path = "Swift-Utils/Classes/Extensions+UIColor.swift"; sourceTree = "<group>"; };
-		E27833CE22327D5E00E4790B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E42190B5F795E71C720C1AF90D028FAB /* Swift-Utils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Swift-Utils-Info.plist"; sourceTree = "<group>"; };
 		EF634973E5C62B316D5C145059DE45EB /* Swift_Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B00A4E9B480CFF63FC11E2DFA664C /* Pods-Swift-Utils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swift-Utils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				B62C83DD224A820300653FAE /* ASButton.swift */,
 				E27833AF223250B600E4790B /* Extensions+String.swift */,
 				E27833B2223250B600E4790B /* Extensions+UIColor.swift */,
+				B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */,
 				B6CEC946224A853A00FB8E5B /* ASLoader.swift */,
 				B6CEC947224A853A00FB8E5B /* ASToast.swift */,
 				E27833AA223250B400E4790B /* EasyExtensions.swift */,
@@ -189,9 +194,10 @@
 				E27833B1223250B600E4790B /* Extensions+UIView.swift */,
 				E27833A9223250B400E4790B /* Extensions+UIResponder.swift */,
 				E27833AB223250B500E4790B /* Extensions+UIViewController.swift */,
+				B6701E15224FAEF900DD911A /* Assets.xcassets */,
 				2DA086E0DA03BFA0BE90ECF832D93FD1 /* Pod */,
 				D777DBBE4D07ADA04C29F5CB88DF6586 /* Support Files */,
-				E27833CE22327D5E00E4790B /* Assets.xcassets */,
+				B6CEC94B224F534F00FB8E5B /* Extensions+UITextfield.swift */,
 			);
 			name = "Swift-Utils";
 			path = ../..;
@@ -397,7 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27833D022327D6E00E4790B /* Assets.xcassets in Resources */,
+				B6701E17224FB88700DD911A /* Assets.xcassets in Resources */,
 				B625A4A4224621F10018D229 /*  .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +444,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EB74A121EB248426AC4377C2F8F975 /* Pods-Swift-Utils_Example-dummy.m in Sources */,
+				B6701E1B22509BF900DD911A /* Extensions+UITextfield.swift in Sources */,
+				B6CEC94C224F534F00FB8E5B /* Extensions+UITextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

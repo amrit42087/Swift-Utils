@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Swift-Utils/Classes/Extensions+UIView.swift"
-            timestampString = "575309196.000423"
+            timestampString = "575702932.087527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "368"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Swift-Utils/Classes/Extensions+UIView.swift"
-            timestampString = "575309196.00051"
+            timestampString = "575702932.08766"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "268"
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Swift-Utils/Classes/Extensions+UIView.swift"
-            timestampString = "575309196.000553"
+            timestampString = "575702932.087734"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "294"
             endingLineNumber = "294"
             landmarkName = "setInitialFrame(addFrom:position:withRespectTo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Swift-Utils/Classes/Extensions+UIView.swift"
+            timestampString = "575702932.0878"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "lock(text:tintColor:textColor:font:centerImage:size:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

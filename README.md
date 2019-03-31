@@ -72,6 +72,12 @@ let parentController = view.parentContainerViewController()
 self.view.topControllerInHierarchy()
 ```
 
+### Turn your UIView into blur view
+
+```
+myView.addBlurView(style: UIBlurEffect.Style.light)
+```
+
 ### Add/Remove loader to/from any UIView component
 
 ```
@@ -245,6 +251,13 @@ self.setCustomBackButton(image: UIImage(named: "back"))
 self.showAlert(title: "Alert", message: "Success", style: .alert)
 ```
 
+### UITextfield Extensions
+
+#### Change placeholder color of UITextfield
+    
+```
+textField.setPlaceholder(text: question.placeholder, color: .gray)
+```
 
 ## Installation
 

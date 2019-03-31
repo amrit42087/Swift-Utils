@@ -18,12 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        ASToast.appearance().toastBackgroundColor = .black
+        ASToast.appearance().toastBackgroundColor = UIColor.black.withAlphaComponent(0.8)
         ASToast.appearance().textColor = .white
+//        ASToast.appearance().isBlurred = true
 
         ASLoader.appearance().tintColor = .red
         ASLoader.appearance().textColor = .white
         ASLoader.appearance().size = CGSize(width: 40, height: 40)
+
 
         return true
     }

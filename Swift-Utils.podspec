@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift-Utils'
-  s.version          = '0.1.0'
+  s.version          = '0.1.5'
   s.summary          = 'Swift Utils can be used to simplify various tasks. They are actually an extension to your UIView, UIViewController, NSObject etc.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Swift-Utils/Classes/**/*'
   s.swift_version = '4.2'
-  #s.resources = “Swift-Utils/*.storyboard”, “Swift-Utils/*.xcassets” 
+  s.resources = "Swift-Utils/Classes/Assets/*.xcassets"
 
   #s.resource_bundles = {
   # 'Swift-Utils' => ['Pod/Assets/*.*']

@@ -23,15 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func showToastButtonTapped(_ sender: UIButton) {
 
-        view.lock(text: "loading...",
-                       tintColor: .red, textColor: .white,
-                       font: UIFont.systemFont(ofSize: 16),
-                       centerImage: UIImage(named: "logo"),
-                       size: CGSize(width: 30, height: 30))
-
-        DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
-            self.view.unlock()
-        }
+        self.showToast(message: "Success")
 //        self.showToast(message: "Success",
 //                       backgroundColor: .black, textColor: .white,
 //                       font: UIFont.systemFont(ofSize: 16))
@@ -39,9 +31,21 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func showLoader(_ sender: UIButton) {
+        view.lock(text: "loading...",
+                  tintColor: .red, textColor: .white,
+                  font: UIFont.systemFont(ofSize: 16),
+                  centerImage: UIImage(named: "logo"),
+                  size: CGSize(width: 30, height: 30))
+
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
+            self.view.unlock()
+        }
+    }
+
     @IBAction func addPopUpAction(_ sender: UIButton) {
         let popUp = UIView.viewFromNib(name: "PopUp")
-        popUp?.frame.size = CGSize(width: 363, height: 250)
+        popUp?.frame.size = CGSize(width: 320, height: 400)
         popUp?.addIn(self, addFrom: animateFrom, position: popUpPosition)
     }
 
