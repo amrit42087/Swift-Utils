@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift-Utils'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Swift Utils can be used to simplify various tasks. They are actually an extension to your UIView, UIViewController, NSObject etc.'
 
 # This description is used to generate tags and improve search results.
@@ -23,14 +23,15 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'amrit42087' => 'amritsidhu88@gmail.com' }
-  s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :tag => s.version.to_s }
+  # s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :commit => "e090741da8bcf50c085458b917ff97df9bbf1e73"}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Swift-Utils/Classes/**/*'
   s.swift_version = '4.2'
-  s.resources = "Swift-Utils/Classes/Assets/*.xcassets"
+  #s.resources = "Swift-Utils/Classes/Assets/*.xcassets"
 
   #s.resource_bundles = {
   # 'Swift-Utils' => ['Pod/Assets/*.*']
