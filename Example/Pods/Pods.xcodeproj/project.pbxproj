@@ -13,6 +13,7 @@
 		5A3873B81F02308E6ABFD6E951C0D712 /* Pods-Swift-Utils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CDC0C4D1179F285C362F0EFED1662 /* Pods-Swift-Utils_Tests-dummy.m */; };
 		6C55CF07EC7788804A3A9B8F6394EA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		B625A4A4224621F10018D229 /*  .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = B625A4A3224621F10018D229 /*  .swift-version */; };
+		B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B628A9572289C94100357ADD /* Swift-Utils.bundle */; };
 		B62C83DE224A820300653FAE /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C83DD224A820300653FAE /* ASButton.swift */; };
 		B63248AD4E3E4E57601B7FCD61C8C0B4 /* Swift-Utils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB70BB72D6F75E8364FBFFC0FD685D67 /* Swift-Utils-dummy.m */; };
 		B6701E17224FB88700DD911A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6701E15224FAEF900DD911A /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4C367974D76D3C0B85BF1787C3DFF26 /* Pods-Swift-Utils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Utils_Example-dummy.m"; sourceTree = "<group>"; };
 		B625A4A3224621F10018D229 /*  .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = " .swift-version"; sourceTree = "<group>"; };
+		B628A9572289C94100357ADD /* Swift-Utils.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Swift-Utils.bundle"; sourceTree = "<group>"; };
 		B62C83DD224A820300653FAE /* ASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASButton.swift; path = "Swift-Utils/Classes/ASButton.swift"; sourceTree = "<group>"; };
 		B6701E15224FAEF900DD911A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Swift-Utils/Classes/Assets.xcassets"; sourceTree = "<group>"; };
 		B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UITextfield.swift"; path = "Swift-Utils/Classes/Extensions+UITextfield.swift"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				E27833B1223250B600E4790B /* Extensions+UIView.swift */,
 				E27833A9223250B400E4790B /* Extensions+UIResponder.swift */,
 				E27833AB223250B500E4790B /* Extensions+UIViewController.swift */,
+				B628A9592289C94900357ADD /* Resources */,
 				B6701E15224FAEF900DD911A /* Assets.xcassets */,
 				2DA086E0DA03BFA0BE90ECF832D93FD1 /* Pod */,
 				D777DBBE4D07ADA04C29F5CB88DF6586 /* Support Files */,
@@ -206,6 +209,14 @@
 				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		B628A9592289C94900357ADD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B628A9572289C94100357ADD /* Swift-Utils.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -393,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
