@@ -16,7 +16,6 @@
 		B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B628A9572289C94100357ADD /* Swift-Utils.bundle */; };
 		B62C83DE224A820300653FAE /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C83DD224A820300653FAE /* ASButton.swift */; };
 		B63248AD4E3E4E57601B7FCD61C8C0B4 /* Swift-Utils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB70BB72D6F75E8364FBFFC0FD685D67 /* Swift-Utils-dummy.m */; };
-		B6701E17224FB88700DD911A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6701E15224FAEF900DD911A /* Assets.xcassets */; };
 		B6701E1B22509BF900DD911A /* Extensions+UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */; };
 		B6CEC948224A853A00FB8E5B /* ASLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEC946224A853A00FB8E5B /* ASLoader.swift */; };
 		B6CEC949224A853A00FB8E5B /* ASToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEC947224A853A00FB8E5B /* ASToast.swift */; };
@@ -78,7 +77,6 @@
 		B625A4A3224621F10018D229 /*  .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = " .swift-version"; sourceTree = "<group>"; };
 		B628A9572289C94100357ADD /* Swift-Utils.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Swift-Utils.bundle"; sourceTree = "<group>"; };
 		B62C83DD224A820300653FAE /* ASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASButton.swift; path = "Swift-Utils/Classes/ASButton.swift"; sourceTree = "<group>"; };
-		B6701E15224FAEF900DD911A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Swift-Utils/Classes/Assets.xcassets"; sourceTree = "<group>"; };
 		B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UITextfield.swift"; path = "Swift-Utils/Classes/Extensions+UITextfield.swift"; sourceTree = "<group>"; };
 		B6CEC946224A853A00FB8E5B /* ASLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASLoader.swift; path = "Swift-Utils/Classes/ASLoader.swift"; sourceTree = "<group>"; };
 		B6CEC947224A853A00FB8E5B /* ASToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASToast.swift; path = "Swift-Utils/Classes/ASToast.swift"; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				E27833A9223250B400E4790B /* Extensions+UIResponder.swift */,
 				E27833AB223250B500E4790B /* Extensions+UIViewController.swift */,
 				B628A9592289C94900357ADD /* Resources */,
-				B6701E15224FAEF900DD911A /* Assets.xcassets */,
 				2DA086E0DA03BFA0BE90ECF832D93FD1 /* Pod */,
 				D777DBBE4D07ADA04C29F5CB88DF6586 /* Support Files */,
 			);
@@ -412,7 +409,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6701E17224FB88700DD911A /* Assets.xcassets in Resources */,
 				B625A4A4224621F10018D229 /*  .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

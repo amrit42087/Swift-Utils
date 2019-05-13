@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Swift-Utils/Classes/**/*'
   s.source_files = 'Swift-Utils/Classes/**/*.xcassets/*.json'
   s.swift_version = '4.2'
-  s.resources = 'Swift-Utils/Classes/**/*'
+  s.resources = 'SwiftUtils/Resources/Swift-Utils.bundle'
   #"resources": "IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
 
   #s.resource_bundles = {
