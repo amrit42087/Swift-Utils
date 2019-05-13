@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift-Utils'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Swift Utils can be used to simplify various tasks. They are actually an extension to your UIView, UIViewController, NSObject etc.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Swift-Utils/Classes/**/*'
   s.source_files = 'Swift-Utils/Classes/**/*.xcassets/*.json'
   s.swift_version = '4.2'
-  s.resources = 'SwiftUtils/Resources/Swift-Utils.bundle'
+  #ss.resources = 'SwiftUtils/Resources/Swift-Utils.bundle'
   #"resources": "IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
 
   #s.resource_bundles = {
