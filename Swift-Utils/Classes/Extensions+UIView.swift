@@ -61,7 +61,8 @@ extension UIView {
                 lockView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
 
                 let imageView = UIImageView()
-                imageView.tintColor = tintColor
+                imageView.tintColor = tintColor != nil ? tintColor : .white
+
                 imageView.translatesAutoresizingMaskIntoConstraints = false
 
                 let logoImageView = UIImageView()
@@ -83,6 +84,7 @@ extension UIView {
                 logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
                 logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 
+                //
                 if mainImage == nil {
                     let bundle = Bundle(for: ASCustomizableView.self)
 
