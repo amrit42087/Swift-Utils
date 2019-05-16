@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ASToast.appearance().textColor = .white
         ASToast.appearance().isBlurred = true
         ASToast.appearance().blurStyle = .dark
+        // Add this listener if you want the toast to appear above keyboard
         ASToast.shared.startKeyboardListener()
 
         ASLoader.appearance().tint = .white

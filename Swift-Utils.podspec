@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift-Utils'
-  s.version          = '0.1.7'
+  s.version          = '1.0'
   s.summary          = 'Swift Utils can be used to simplify various tasks. They are actually an extension to your UIView, UIViewController, NSObject etc.'
 
 # This description is used to generate tags and improve search results.
