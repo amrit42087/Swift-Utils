@@ -12,6 +12,8 @@
 		47EB74A121EB248426AC4377C2F8F975 /* Pods-Swift-Utils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C367974D76D3C0B85BF1787C3DFF26 /* Pods-Swift-Utils_Example-dummy.m */; };
 		5A3873B81F02308E6ABFD6E951C0D712 /* Pods-Swift-Utils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CDC0C4D1179F285C362F0EFED1662 /* Pods-Swift-Utils_Tests-dummy.m */; };
 		6C55CF07EC7788804A3A9B8F6394EA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		B618F0A4228C723000017469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618F0A3228C722F00017469 /* Assets.xcassets */; };
+		B618F0AB228DA40F00017469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618F0AA228DA40E00017469 /* Assets.xcassets */; };
 		B625A4A4224621F10018D229 /*  .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = B625A4A3224621F10018D229 /*  .swift-version */; };
 		B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B628A9572289C94100357ADD /* Swift-Utils.bundle */; };
 		B62C83DE224A820300653FAE /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C83DD224A820300653FAE /* ASButton.swift */; };
@@ -74,6 +76,8 @@
 		92B6D775A6E5DEFFC22DB5D1EACCB1EB /* Pods-Swift-Utils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Swift-Utils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4C367974D76D3C0B85BF1787C3DFF26 /* Pods-Swift-Utils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swift-Utils_Example-dummy.m"; sourceTree = "<group>"; };
+		B618F0A3228C722F00017469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B618F0AA228DA40E00017469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B625A4A3224621F10018D229 /*  .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = " .swift-version"; sourceTree = "<group>"; };
 		B628A9572289C94100357ADD /* Swift-Utils.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Swift-Utils.bundle"; sourceTree = "<group>"; };
 		B62C83DD224A820300653FAE /* ASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASButton.swift; path = "Swift-Utils/Classes/ASButton.swift"; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 		82993494CBA1EDC590BF860DB906725A /* Swift-Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B618F0A3228C722F00017469 /* Assets.xcassets */,
 				E27833AC223250B500E4790B /* ASCustomizableView.swift */,
 				B62C83DD224A820300653FAE /* ASButton.swift */,
 				E27833AF223250B600E4790B /* Extensions+String.swift */,
@@ -211,6 +216,7 @@
 		B628A9592289C94900357ADD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B618F0AA228DA40E00017469 /* Assets.xcassets */,
 				B628A9572289C94100357ADD /* Swift-Utils.bundle */,
 			);
 			path = Resources;
@@ -409,6 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B618F0A4228C723000017469 /* Assets.xcassets in Resources */,
+				B618F0AB228DA40F00017469 /* Assets.xcassets in Resources */,
 				B625A4A4224621F10018D229 /*  .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

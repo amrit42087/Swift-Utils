@@ -87,7 +87,7 @@ extension UIResponder {
 
             if ASToast.isBlurred {
                 lockView.backgroundColor = .clear
-                lockView.addBlurView(style: UIBlurEffect.Style.light)
+                lockView.addBlurView(style: ASToast.blurStyle)
             } else {
                 lockView.backgroundColor = backgroundColor
             }

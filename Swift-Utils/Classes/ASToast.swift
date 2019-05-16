@@ -11,6 +11,7 @@ open class ASToast: UIView {
     @objc dynamic open var textColor: UIColor? = .black
     @objc dynamic open var font: UIFont?
     @objc dynamic open var isBlurred: Bool = false
+    @objc dynamic open var blurStyle: UIBlurEffect.Style = .dark
 
     static var textColor: UIColor? {
         return ASToast.appearance().textColor
@@ -27,6 +28,11 @@ open class ASToast: UIView {
     static var isBlurred: Bool {
         return ASToast.appearance().isBlurred
     }
+
+    static var blurStyle: UIBlurEffect.Style {
+        return ASToast.appearance().blurStyle
+    }
+
 
 }
 
