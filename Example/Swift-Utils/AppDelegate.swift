@@ -20,11 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         ASToast.appearance().toastBackgroundColor = UIColor.black.withAlphaComponent(0.8)
         ASToast.appearance().textColor = .white
-//        ASToast.appearance().isBlurred = true
+        ASToast.appearance().isBlurred = true
+        ASToast.appearance().blurStyle = .dark
+        ASToast.shared.startKeyboardListener()
 
-        ASLoader.appearance().tintColor = .red
-        ASLoader.appearance().textColor = .white
-        ASLoader.appearance().size = CGSize(width: 40, height: 40)
+        ASLoader.appearance().tint = .white
+        ASLoader.appearance().textColor = .red
+        ASLoader.appearance().size = CGSize(width: 100, height: 100)
 
 
         return true

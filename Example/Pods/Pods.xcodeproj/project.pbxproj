@@ -14,8 +14,8 @@
 		6C55CF07EC7788804A3A9B8F6394EA5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		B618F0A4228C723000017469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618F0A3228C722F00017469 /* Assets.xcassets */; };
 		B618F0AB228DA40F00017469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B618F0AA228DA40E00017469 /* Assets.xcassets */; };
+		B618F0E6228DB07100017469 /* Swift-Utils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B628A9572289C94100357ADD /* Swift-Utils.bundle */; };
 		B625A4A4224621F10018D229 /*  .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = B625A4A3224621F10018D229 /*  .swift-version */; };
-		B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B628A9572289C94100357ADD /* Swift-Utils.bundle */; };
 		B62C83DE224A820300653FAE /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C83DD224A820300653FAE /* ASButton.swift */; };
 		B63248AD4E3E4E57601B7FCD61C8C0B4 /* Swift-Utils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB70BB72D6F75E8364FBFFC0FD685D67 /* Swift-Utils-dummy.m */; };
 		B6701E1B22509BF900DD911A /* Extensions+UITextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6701E1A22509BF900DD911A /* Extensions+UITextfield.swift */; };
@@ -407,7 +407,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B628A9582289C94100357ADD /* Swift-Utils.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B618F0A4228C723000017469 /* Assets.xcassets in Resources */,
+				B618F0E6228DB07100017469 /* Swift-Utils.bundle in Resources */,
 				B618F0AB228DA40F00017469 /* Assets.xcassets in Resources */,
 				B625A4A4224621F10018D229 /*  .swift-version in Resources */,
 			);
@@ -643,7 +643,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Swift-Utils/Swift-Utils-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Swift-Utils/Swift-Utils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Swift-Utils/Swift-Utils.modulemap";
 				PRODUCT_MODULE_NAME = Swift_Utils;
@@ -676,7 +676,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Swift-Utils/Swift-Utils-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Swift-Utils/Swift-Utils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Swift-Utils/Swift-Utils.modulemap";
 				PRODUCT_MODULE_NAME = Swift_Utils;

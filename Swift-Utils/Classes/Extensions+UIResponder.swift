@@ -47,7 +47,7 @@ extension UIResponder {
             let height = getHeight(text: message, toFitFixedWidth: window.frame.width-40, font: UIFont.systemFont(ofSize: 12.0))
 
             let lockView = UIView()
-            lockView.frame = CGRect(x: 10, y: (window.frame.height) , width: window.frame.width-20, height: height+50)
+            lockView.frame = CGRect(x: 10, y: (window.frame.height) , width: window.frame.width-20, height: height+40)
 
             lockView.layer.cornerRadius = 5
             lockView.clipsToBounds = true
@@ -73,7 +73,7 @@ extension UIResponder {
             lockView.addSubview(label)
             window.addSubview(lockView)
 
-            var tabBarHeight : CGFloat = 0.0
+            var tabBarHeight : CGFloat = ASToast.shared.keyboardHeight
 
             if let topController = UIApplication.shared.keyWindow?.topControllerInHierarchy(), let tabBar = topController.tabBarController?.tabBar {
                 if !tabBar.isHidden {
@@ -82,7 +82,7 @@ extension UIResponder {
             }
 
 
-            lockView.frame = CGRect(x: 10, y: ((window.frame.height)-tabBarHeight) - (height+60), width: actualWidth, height: height+50)
+            lockView.frame = CGRect(x: 10, y: ((window.frame.height)-tabBarHeight) - (height+60), width: actualWidth, height: height+40)
             lockView.center.x = window.center.x
 
             if ASToast.isBlurred {
@@ -94,7 +94,7 @@ extension UIResponder {
 
             UIView.animate(withDuration: 0.2) {
                 lockView.alpha = 1.0
-                lockView.center.y = ((window.frame.height)-tabBarHeight) - (height+60)
+                lockView.center.y = ((window.frame.height)-tabBarHeight) - (height+40)
             }
         }
 
@@ -109,7 +109,7 @@ extension UIResponder {
 
             if view?.tag == 2005 {
                 UIView.animate(withDuration: 0.2, animations: {
-                    view?.frame = CGRect(x: 10, y: (window!.frame.height), width: window!.frame.width-20, height: 50)
+                    view?.center.y = window!.frame.height
                 }, completion: { (success) in
                     view?.removeFromSuperview()
                 })

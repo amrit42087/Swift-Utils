@@ -42,65 +42,74 @@ extension UIView {
             else {
 
                 //                ASLoader.appearance().tintColor
-                let tint = tintColor ?? ASLoader.appearance().tint
+                let tintColor = tintColor ?? ASLoader.appearance().tintColor
                 let textColor = textColor ?? ASLoader.appearance().textColor
                 let font = font ?? ASLoader.appearance().font
                 let size = size ?? ASLoader.appearance().size
 
-                let lockView = UIView(frame: self.bounds)
+                let lockView = UIView()
+                lockView.translatesAutoresizingMaskIntoConstraints = false
                 lockView.backgroundColor = UIColor(white: 0, alpha: 0.3)
-
                 lockView.alpha = 0.0
+                lockView.tag = 2001
+
+                self.addSubview(lockView)
+
+                lockView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+                lockView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+                lockView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+                lockView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
 
                 let imageView = UIImageView()
+                imageView.tintColor = tintColor
+                imageView.translatesAutoresizingMaskIntoConstraints = false
+
                 let logoImageView = UIImageView()
-
-                imageView.frame.size.height = size.height
-                imageView.frame.size.width = size.width
-                logoImageView.frame.size.height = imageView.frame.width/2
-                logoImageView.frame.size.width = imageView.frame.width/2
-
-                imageView.center = lockView.center
-
-                if mainImage != nil {
-                    imageView.image = mainImage
-                } else {
-                    let bundle = Bundle(for: ASCustomizableView.self)
-
-                    let image = UIImage(named: "loading", in: bundle, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
-                    imageView.image = image
-                }
-
-                imageView.tintColor = tint
-                lockView.addSubview(imageView)
-
-                lockView.tag = 2001
                 logoImageView.contentMode = .scaleAspectFit
-                logoImageView.center = lockView.center
                 logoImageView.image = centerImage
 
-                logoImageView.layer.cornerRadius = logoImageView.frame.width/2
-                logoImageView.clipsToBounds = true
+                logoImageView.translatesAutoresizingMaskIntoConstraints = false
+
+                lockView.addSubview(imageView)
                 lockView.addSubview(logoImageView)
+
+                imageView.widthAnchor.constraint(equalToConstant: size.width).isActive = true
+                imageView.heightAnchor.constraint(equalToConstant: size.height).isActive = true
+                imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+                imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
+                logoImageView.widthAnchor.constraint(equalToConstant: size.width/2).isActive = true
+                logoImageView.heightAnchor.constraint(equalToConstant: size.height/2).isActive = true
+                logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+                logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+
+                if mainImage == nil {
+                    let bundle = Bundle(for: ASCustomizableView.self)
+
+                    if let path = bundle.path(forResource: "Swift-Utils", ofType: "bundle") {
+                        let resourceBundle = Bundle(path: path)
+                        let image = UIImage(named: "loader.png", in: resourceBundle, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+                        imageView.image = image
+                    }
+                } else {
+                    imageView.image = mainImage
+                }
+
+                logoImageView.layer.cornerRadius = (size.width/2)/2
+                logoImageView.clipsToBounds = true
 
                 if let text = text {
                     let label = UILabel()
                     label.text = text
                     label.textColor = textColor
-                    label.sizeToFit()
                     label.font = font
+                    label.sizeToFit()
                     label.center = CGPoint(x: imageView.center.x, y: imageView.center.y + (imageView.bounds.height/2) + 15)
                     lockView.addSubview(label)
                 }
 
                 self.rotateView(view: imageView)
 
-                //                let activity = UIActivityIndicatorView(style: .white)
-                //                activity.hidesWhenStopped = true
-                //                activity.center = lockView.center
-                //                activity.startAnimating()
-                self.addSubview(lockView)
-                
                 if let button = self as? UIButton {
                     self.topControllerInHierarchy()?.view.isUserInteractionEnabled = false
                     UserDefaults.standard.set(button.titleLabel?.text, forKey: "lockedButtonTitle")

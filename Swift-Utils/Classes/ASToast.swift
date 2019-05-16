@@ -33,6 +33,26 @@ open class ASToast: UIView {
         return ASToast.appearance().blurStyle
     }
 
+    public static let shared = ASToast()
+    var keyboardHeight: CGFloat = 0.0
+
+    // Start this listener if you want to present the toast above the keyboard.
+    public func startKeyboardListener() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    @objc func didShow(notification: Notification) {
+        let userInfo = notification.userInfo as! [String: AnyObject]
+
+        let keyboardScreenEndFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+
+        keyboardHeight = keyboardScreenEndFrame.size.height
+    }
+
+    @objc func didHide(){
+        keyboardHeight = 0
+    }
 
 }
 

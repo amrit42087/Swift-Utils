@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVq-d3-QsX" customClass="ASButton" customModule="Pods_Swift_Utils_Example">
-                                <rect key="frame" x="50" y="537" width="275" height="40"/>
+                                <rect key="frame" x="50" y="177" width="275" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.16078431369999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0BZ-OL-Dzr"/>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iN4-ZR-hQy" customClass="ASButton" customModule="Pods_Swift_Utils_Example">
-                                <rect key="frame" x="50" y="587" width="275" height="40"/>
+                                <rect key="frame" x="50" y="227" width="275" height="40"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.16078431369999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="m67-q8-XZw"/>
@@ -142,16 +142,24 @@
                                     <action selector="addPopUpAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QoE-V4-6uu"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBx-to-2Jv">
+                                <rect key="frame" x="175" y="318.5" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iN4-ZR-hQy" firstAttribute="centerX" secondItem="AVq-d3-QsX" secondAttribute="centerX" id="09O-yb-New"/>
                             <constraint firstItem="Bsy-rg-hOu" firstAttribute="top" secondItem="5Kt-pZ-7oT" secondAttribute="bottom" constant="25" id="9XZ-Z4-WkD"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AVq-d3-QsX" secondAttribute="bottom" constant="90" id="IPK-xC-oHQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AVq-d3-QsX" secondAttribute="bottom" constant="450" id="IPK-xC-oHQ"/>
                             <constraint firstItem="5Kt-pZ-7oT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="12" id="LKD-MK-Trr"/>
                             <constraint firstAttribute="trailing" secondItem="AVq-d3-QsX" secondAttribute="trailing" constant="50" id="aKA-cU-xwA"/>
                             <constraint firstItem="Bsy-rg-hOu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="abn-N7-4cO"/>
+                            <constraint firstItem="YBx-to-2Jv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="b2C-U1-w1F"/>
                             <constraint firstItem="iN4-ZR-hQy" firstAttribute="top" secondItem="AVq-d3-QsX" secondAttribute="bottom" constant="10" id="hQM-V4-n3a"/>
+                            <constraint firstItem="YBx-to-2Jv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hYp-5t-85j"/>
                             <constraint firstAttribute="trailing" secondItem="5Kt-pZ-7oT" secondAttribute="trailing" constant="10" id="kev-7p-Cyq"/>
                             <constraint firstItem="AVq-d3-QsX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="lZU-oc-emW"/>
                             <constraint firstItem="5Kt-pZ-7oT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="o4Z-Ln-v1S"/>
@@ -161,6 +169,9 @@
                             <constraint firstItem="Bsy-rg-hOu" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vEX-AJ-Qnd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textfield" destination="YBx-to-2Jv" id="gvg-7T-pMP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

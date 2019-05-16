@@ -23,22 +23,21 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'amrit42087' => 'amritsidhu88@gmail.com' }
-  #s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :tag => s.version.to_s }
-  s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :commit => "b805dc3ee9365f996ad9e1c7d83a5351efb32983"}
+  s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :tag => s.version.to_s }
+#  s.source           = { :git => 'https://github.com/amrit42087/Swift-Utils.git', :commit => "b805dc3ee9365f996ad9e1c7d83a5351efb32983"}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Swift-Utils/Classes/**/*'
-  s.source_files = 'Swift-Utils/Classes/**/*.xcassets/*.json'
+#  s.source_files = 'Swift-Utils/Classes/**/*.xcassets/*.json'
   s.swift_version = '4.2'
   #ss.resources = `'SwiftUtils/Resources/Swift-Utils.bundle'
   #"resources": "IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle",
 
   s.resource_bundles = {
-      'Swift-Utilities' => ['Swift-Utilities/Assets/*.png','Resources/Assets/*.png','Resources/Swift-Utilities.bundle']
+      'Swift-Utils' => ['Swift-Utils/Assets/*.png','Resources/Assets.xcassets','Resources/Swift-Utils.bundle']
   }
-  
   #s.resource_bundles = {
   # 'Swift-Utils' => ['Pod/Assets/*.*']
   #}

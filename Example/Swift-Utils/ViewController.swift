@@ -11,14 +11,15 @@ import Swift_Utils
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textfield: UITextField!
     var animateFrom: UIRectEdge = .top
     var popUpPosition: PopUpPosition = .top
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+        textfield.becomeFirstResponder()
+
     }
 
     @IBAction func showToastButtonTapped(_ sender: UIButton) {
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
                   tintColor: .red, textColor: .white,
                   font: UIFont.systemFont(ofSize: 16),
                   centerImage: UIImage(named: "logo"),
-                  size: CGSize(width: 30, height: 30))
+                  size: CGSize(width: 40, height: 40))
 
         DispatchQueue.main.asyncAfter(deadline: .now()+1.0) {
             self.view.unlock()
